@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    background-color:beige;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    
+}
+
+.milliheader{
+    font-size: 200%;
+    font-weight: 100;
+}
+.midja{
+    text-align: center;
+    font-size: 1.5em;
+}
+.h1{
+    margin: 0;
+}
+.content{
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+
+}
+.h4{
+    font-weight: 50;
+}
+.midja{
+    line-height: 150%;
+}
+.center{
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+.kort{
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+}
+.mynd{
+    text-align: center;
+
+}
+.video{
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+}
+
+
+.textinn{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.mynd1{
+    grid-area: mynd1;
+    
+}
+.mynd2{
+    grid-area: mynd2;
+    padding-right: .6em;
+    
+
+}
+.mynd3{grid-area: mynd2;
+    padding-left: .6em;}
+    
+.mynd{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mynd1 mynd1"
+    "mynd1 mynd1"
+    "mynd2 mynd3"; 
+
+}
+@media screen and (min-width:20em){
+    .main{
+        display: grid;
+        grid-template-areas: 
+        "haegri"
+        "midja"
+        "vinstri";
+    }
+    .haegri{
+        text-align: center;
+        
+    }
+    .kort{
+        width: 320px;
+        padding: 0%;
+    }
+    .video{
+        width: 100%;
+        height: 25%;
+        padding: 0em;
+    }
+    .main{
+        padding-bottom:4em ;
+    }
+    .textinn{
+        padding-left:.5em;
+        padding-right: .5em;
+    }
+}
+@media screen and (min-width:37.5em){
+    .kort{
+        width: 600px;
+        
+    }
+    .video{
+        width: 70%;
+        height: 70%;
+    }
+    .main{
+        padding-bottom: 27em;
+    }
+    .footer{
+        padding-left: 2em;
+    }
+    .textinn{
+        padding-left:2em;
+        padding-right: 2em;
+    }
+
+
+}
+@media screen and (min-width:60em){
+    .kort{
+        width: 1000px;
+        
+    }
+    .video{
+        width: 70%;
+        height: 85%;
+        padding:1em ;
+    }
+    .main{
+        padding-bottom: 38em;
+    }
+    .footer{
+        padding-left: 2em;
+    }
+    .textinn{
+        padding-left:15em ;
+        padding-right: 15em;
+        letter-spacing: 1px;
+    }
+
+
+}
+@media screen and (min-width:80em){
+    .kort{
+        width: 1400px;
+        
+    }
+
+}
