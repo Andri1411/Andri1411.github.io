@@ -59,9 +59,38 @@ html {
     border-style:none;
     margin: 0 auto;
 }
+.logo {
+    display: block;
+    text-indent: -9999px;
+    width: 1000px;
+    height: 820px;
+    background: url(img\Rocket_League_logo.svg);
+    background-size: 1000px 820px;
+    margin: 0;
+  }
 
 .textinn{
     background-color: rgba(255, 255, 255, 0.1);
+
+}
+.mynd1{
+    grid-area: mynd1;
+    
+}
+.mynd2{
+    grid-area: mynd2;
+    padding-right: .6em;
+
+}
+.mynd3{grid-area: mynd2;
+    padding-left: .6em;}
+.mynd{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mynd1 mynd1"
+    "mynd1 mynd1"
+    "mynd2 mynd3"; 
 
 }
 @media screen and (min-width:20em){
@@ -136,6 +165,7 @@ html {
         padding-right: 15em;
         letter-spacing: 1px;
     }
+
 
 }
 @media screen and (min-width:80em){
