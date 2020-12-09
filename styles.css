@@ -71,11 +71,11 @@ html {
 }
 .mynd2{
     grid-area: mynd2;
-    padding-right: .5em;
+    
 
 }
 .mynd3{grid-area: mynd2;
-    padding-left: .5em;}
+    
 .mynd{
     display:grid;
     grid-template-columns: 1fr 1fr;
